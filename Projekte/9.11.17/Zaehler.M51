@@ -1,0 +1,73 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/15/2017  19:22:47  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE Zaehler.obj TO Zaehler. RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Zaehler.obj (ZAEHLER)
+
+
+LINK MAP OF MODULE:  Zaehler. (ZAEHLER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     002CH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Zaehler. (ZAEHLER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ZAEHLER
+  B:0090H.4       SYMBOL        L1
+  B:0090H.5       SYMBOL        L2
+  B:0090H.6       SYMBOL        L3
+  B:0090H.7       SYMBOL        L4
+  C:0027H         SYMBOL        LOESCHEALLES
+  D:0090H         SYMBOL        P1
+  B:0090H.0       SYMBOL        S1
+  B:0090H.1       SYMBOL        S2
+  C:000BH         SYMBOL        SETZEL1
+  C:0012H         SYMBOL        SETZEL2
+  C:0019H         SYMBOL        SETZEL3
+  C:0020H         SYMBOL        SETZEL4
+  C:0003H         SYMBOL        START
+  C:0000H         LINE#         8
+  C:0003H         LINE#         12
+  C:0006H         LINE#         13
+  C:0009H         LINE#         14
+  C:000BH         LINE#         18
+  C:000DH         LINE#         19
+  C:0010H         LINE#         20
+  C:0012H         LINE#         24
+  C:0014H         LINE#         25
+  C:0017H         LINE#         26
+  C:0019H         LINE#         30
+  C:001BH         LINE#         31
+  C:001EH         LINE#         32
+  C:0020H         LINE#         36
+  C:0022H         LINE#         37
+  C:0025H         LINE#         38
+  C:0027H         LINE#         42
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/15/2017  19:22:47  PAGE 2
+
+
+  C:002AH         LINE#         43
+  -------         ENDMOD        ZAEHLER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 002CH BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=44
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

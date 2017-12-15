@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+H:\ITÜ MVision\9.11.17\Ampel.uvproj
+Project File Date:  11/09/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(13): error A40: INVALID REGISTER
+ampel1.a51(14): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(13): error A40: INVALID REGISTER
+ampel1.a51(14): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(19): error A40: INVALID REGISTER
+ampel1.a51(20): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(9): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(11): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(13): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(15): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(18): warning A73: TEXT FOUND BEYOND END STATEMENT - IGNORED
+Target not created
+Rebuild target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(20): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(20): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(20): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(20): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(32): error A40: INVALID REGISTER
+ampel1.a51(33): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(12): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(15): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(19): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(24): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(30): warning A73: TEXT FOUND BEYOND END STATEMENT - IGNORED
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(12): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(15): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(19): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(24): error A45: UNDEFINED SYMBOL (PASS-2)
+ampel1.a51(30): warning A73: TEXT FOUND BEYOND END STATEMENT - IGNORED
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+Ampel.a51(13): error A40: INVALID REGISTER
+Ampel.a51(14): warning A41: MISSING 'END' STATEMENT
+assembling ampel1.a51...
+ampel1.a51(32): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling Ampel.a51...
+A51 MACRO ASSEMBLER V8.02b - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2008
+"C:\Keil\C51\BIN\A51.EXE" "Ampel.a51" SET (SMALL) DEBUG EP
+A51 FATAL ERROR -
+  FILE:       Ampel.a51
+  ERROR:      FILE DOES NOT EXIST
+A51 TERMINATED.
+Target not created
+Build target 'Target 1'
+assembling ampel1.a51...
+ampel1.a51(32): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=46
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=46
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=46
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=46
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=46
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=46
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=48
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling ampel1.a51...
+linking...
+Program Size: data=8.0 xdata=0 code=48
+creating hex file from "Ampel"...
+"Ampel" - 0 Error(s), 0 Warning(s).

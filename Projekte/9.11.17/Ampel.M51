@@ -1,0 +1,74 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/09/2017  08:15:07  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE ampel1.obj TO Ampel RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  ampel1.obj (AMPEL1)
+
+
+LINK MAP OF MODULE:  Ampel (AMPEL1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0030H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Ampel (AMPEL1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        AMPEL1
+  B:0090H.1       SYMBOL        A_GELB
+  B:0090H.0       SYMBOL        A_GR
+  B:0090H.2       SYMBOL        A_ROT
+  B:0090H.3       SYMBOL        F_GR
+  B:0090H.4       SYMBOL        F_ROT
+  D:0090H         SYMBOL        P1
+  C:0007H         SYMBOL        START
+  C:002BH         SYMBOL        TIME
+  C:0000H         LINE#         7
+  C:0003H         LINE#         8
+  C:0005H         LINE#         9
+  C:0007H         LINE#         12
+  C:0009H         LINE#         13
+  C:000BH         LINE#         14
+  C:000DH         LINE#         15
+  C:000FH         LINE#         16
+  C:0011H         LINE#         17
+  C:0013H         LINE#         18
+  C:0015H         LINE#         19
+  C:0017H         LINE#         20
+  C:0019H         LINE#         21
+  C:001BH         LINE#         22
+  C:001DH         LINE#         23
+  C:001FH         LINE#         24
+  C:0021H         LINE#         25
+  C:0023H         LINE#         26
+  C:0025H         LINE#         27
+  C:0027H         LINE#         28
+  C:0029H         LINE#         29
+  C:002BH         LINE#         32
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/09/2017  08:15:07  PAGE 2
+
+
+  C:002DH         LINE#         33
+  C:002FH         LINE#         34
+  -------         ENDMOD        AMPEL1
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0030H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=48
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

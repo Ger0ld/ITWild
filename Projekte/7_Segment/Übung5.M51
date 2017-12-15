@@ -1,0 +1,89 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/06/2017  19:47:45  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE Aufgabe5.obj TO Übung5 RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Aufgabe5.obj (AUFGABE5)
+
+
+LINK MAP OF MODULE:  Übung5 (AUFGABE5)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     004BH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Übung5 (AUFGABE5)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        AUFGABE5
+  C:0035H         SYMBOL        BCD_7SEG
+  B:00B0H.6       SYMBOL        EINER
+  C:0000H         SYMBOL        INIT
+  C:0039H         SYMBOL        LOOP
+  C:002EH         SYMBOL        N_10
+  D:0090H         SYMBOL        P1
+  D:00B0H         SYMBOL        P3
+  C:000DH         SYMBOL        START
+  C:0040H         SYMBOL        TABELLE
+  C:0037H         SYMBOL        TIMER
+  N:000AH         SYMBOL        VERZ
+  N:00FDH         SYMBOL        VERZ2
+  B:00B0H.7       SYMBOL        ZEHNER
+  C:0000H         LINE#         6
+  C:0003H         LINE#         7
+  C:0005H         LINE#         8
+  C:0007H         LINE#         9
+  C:0009H         LINE#         10
+  C:000BH         LINE#         11
+  C:000DH         LINE#         14
+  C:000EH         LINE#         15
+  C:0010H         LINE#         16
+  C:0012H         LINE#         17
+  C:0014H         LINE#         18
+  C:0016H         LINE#         19
+  C:0018H         LINE#         21
+  C:0019H         LINE#         22
+  C:001BH         LINE#         23
+  C:001DH         LINE#         24
+  C:001FH         LINE#         25
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/06/2017  19:47:45  PAGE 2
+
+
+  C:0021H         LINE#         26
+  C:0023H         LINE#         27
+  C:0025H         LINE#         28
+  C:0027H         LINE#         29
+  C:0028H         LINE#         30
+  C:002BH         LINE#         31
+  C:002DH         LINE#         32
+  C:002EH         LINE#         34
+  C:0031H         LINE#         35
+  C:0033H         LINE#         36
+  C:0035H         LINE#         38
+  C:0036H         LINE#         39
+  C:0037H         LINE#         41
+  C:0039H         LINE#         43
+  C:003BH         LINE#         44
+  C:003DH         LINE#         45
+  C:003FH         LINE#         46
+  -------         ENDMOD        AUFGABE5
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004BH BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=75
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
