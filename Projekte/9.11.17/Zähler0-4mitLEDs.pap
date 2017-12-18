@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="213BF6C98E384160">
+  <PROJECT FORMAT="1.00" NAME="Zähler0-4mitLEDs" AUTHOR="Gerold" CREATED="2017.12.16 20:40:35" MODIFIED="2017.12.16 21:16:13">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Hauptprogramm 1" CREATED="2017.12.16 20:40:54" MODIFIED="2017.12.16 21:16:13">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="21">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="86">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="19">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="77">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Hauptprogramm 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="88">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[P1 := 0]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[P1.0 = 1 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[P1.4 := 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="32">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[P1.0 = 1 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="36">
+                <TEXT><![CDATA[P1.5 := 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="55">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="25">
+                <TEXT><![CDATA[P1.0 = 1 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="12">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="38">
+                <TEXT><![CDATA[P1.6 := 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="13">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="44">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="14">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[P1.0 = 1 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="15">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="40">
+                <TEXT><![CDATA[P1.7 := 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="16">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="66">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="17">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="58">
+                <TEXT><![CDATA[P1.1 = 1 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="18">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="72">
+                <TEXT><![CDATA[P1.4 bis P1.7 := 0]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="19">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="79">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="20">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="74">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="29">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="50">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="11">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="52">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="13">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="42">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="14">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="69">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="16">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="63">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="17">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="60">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="89" FROM="88" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="32" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="6" TO="16" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="14" FROM="8" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="81" FROM="79" TO="77" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="32" TO="23" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="35" FROM="29" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="23" TO="36" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="25" TO="38" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="27" TO="40" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="23" TO="29" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="34" FROM="20" TO="32" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="56" FROM="55" TO="25" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="45" FROM="44" TO="27" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="67" FROM="66" TO="58" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="39" FROM="38" TO="44" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="46" FROM="42" TO="44" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="40" TO="66" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="70" FROM="27" TO="69" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="53" FROM="25" TO="52" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="54" FROM="52" TO="50" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="37" FROM="36" TO="55" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="57" FROM="50" TO="55" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="59" FROM="58" TO="72" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="61" FROM="58" TO="60" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="68" FROM="63" TO="66" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="62" FROM="60" TO="63" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="71" FROM="69" TO="42" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="80" FROM="72" TO="79" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="75" FROM="6" TO="74" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="76" FROM="74" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="83" FROM="77" TO="86" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="88" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="90" FROM="86" TO="88" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
