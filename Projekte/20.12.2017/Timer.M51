@@ -1,0 +1,50 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/20/2017  17:30:49  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE timer.obj TO Timer RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  timer.obj (TIMER)
+
+
+LINK MAP OF MODULE:  Timer (TIMER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000DH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Timer (TIMER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TIMER
+  C:0000H         SYMBOL        INIT
+  C:0005H         SYMBOL        START
+  B:0088H.5       SYMBOL        TF0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0000H         LINE#         3
+  C:0003H         LINE#         4
+  C:0005H         LINE#         7
+  C:0008H         LINE#         8
+  C:000AH         LINE#         9
+  C:000BH         LINE#         10
+  -------         ENDMOD        TIMER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000DH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=13
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
