@@ -1,0 +1,83 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/07/2018  18:17:09  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE Projekt01a.obj TO Anzeige RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Projekt01a.obj (PROJEKT01A)
+
+
+LINK MAP OF MODULE:  Anzeige (PROJEKT01A)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     002FH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Anzeige (PROJEKT01A)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PROJEKT01A
+  C:0023H         SYMBOL        ANZEIGEN
+  C:0000H         SYMBOL        DEKLARATION
+  B:0090H.4       SYMBOL        DIGIT0
+  B:0090H.5       SYMBOL        DIGIT1
+  B:0090H.6       SYMBOL        DIGIT2
+  B:0090H.7       SYMBOL        DIGIT3
+  D:0090H         SYMBOL        ICM
+  C:0000H         SYMBOL        INIT
+  D:0090H         SYMBOL        P1
+  C:000DH         SYMBOL        START
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0015H         SYMBOL        VERZ1SEK
+  N:0030H         SYMBOL        ZIFFER0
+  N:0031H         SYMBOL        ZIFFER1
+  N:0032H         SYMBOL        ZIFFER2
+  N:0033H         SYMBOL        ZIFFER3
+  C:0000H         LINE#         17
+  C:0002H         LINE#         18
+  C:0004H         LINE#         19
+  C:0007H         LINE#         20
+  C:000AH         LINE#         21
+  C:000DH         LINE#         24
+  C:000FH         LINE#         25
+  C:0011H         LINE#         26
+  C:0013H         LINE#         27
+  C:0015H         LINE#         30
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/07/2018  18:17:09  PAGE 2
+
+
+  C:0018H         LINE#         31
+  C:001AH         LINE#         32
+  C:001CH         LINE#         33
+  C:001EH         LINE#         34
+  C:0020H         LINE#         35
+  C:0022H         LINE#         36
+  C:0023H         LINE#         43
+  C:0026H         LINE#         44
+  C:0029H         LINE#         45
+  C:002BH         LINE#         46
+  C:002DH         LINE#         47
+  -------         ENDMOD        PROJEKT01A
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 002FH BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=47
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
