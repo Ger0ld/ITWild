@@ -218,7 +218,7 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0xffff</Size>
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -355,6 +355,43 @@
               <FileName>Projekt01a.a51</FileName>
               <FileType>2</FileType>
               <FilePath>.\Projekt01a.a51</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>0</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <BankNo>65535</BankNo>
+                </CommonProperty>
+                <File51>
+                  <Ax51>
+                    <UseMpl>2</UseMpl>
+                    <UseStandard>2</UseStandard>
+                    <UseCase>2</UseCase>
+                    <UseMod51>2</UseMod51>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Ax51>
+                </File51>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>Projekt01.a51</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Projekt01.a51</FilePath>
             </File>
           </Files>
         </Group>
