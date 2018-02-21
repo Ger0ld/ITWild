@@ -1,23 +1,24 @@
-f_gr equ p1.3	;f = fuﬂg‰ngerampel
-f_rot equ p1.4
-a_gr equ p1.0 	;a = Autoampel
-a_gelb equ p1.1
-a_rot equ p1.2
+f_gr equ p0.3	;f = fuﬂg‰ngerampel
+f_rot equ p0.4
+a_gr equ p0.0 	;a = Autoampel
+a_gelb equ p0.1
+a_rot equ p0.2
 zaehler1 equ r7
 zaehler2 equ r6
-taster equ p1.7
+taster equ p0.7
 
 init:
-		mov TMOD,#00000010b
+	
+	mov TMOD,#00000010b
 	mov tl0,#6
 	mov th0,#6
-	mov p1,#0
+	mov p0,#10000000
 	setb f_rot
 	setb a_gr
 
 start:
 	
-	;jb taster,start
+	jnb taster,start
 	
 	call zeitLang
 	;Autoampel auf Gelb

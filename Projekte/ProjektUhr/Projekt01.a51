@@ -1,4 +1,4 @@
-	ICM equ P1
+ICM equ P1
 	Ziffer0 equ 30h
 	Ziffer1 equ 31h
 	Ziffer2 equ 32h
@@ -26,36 +26,68 @@ start:
 	
 	
 	inc Ziffer0
-	call Ausgabe0
 	mov a,Ziffer0
-	cjne a,#9,start
+	cjne a,#10,next
+	jmp mehrAls9
+next:
+	call Ausgabe0
+	jmp start
+mehrAls9:
+
 	mov Ziffer0,#0
 	
-	
-	inc Ziffer1
 	call Ausgabe0
-	call Ausgabe1
-	mov a,Ziffer1
-	cjne a,#6,start
-	mov Ziffer1,#0
 	
+	
+
+	inc Ziffer1
+	
+	mov a,Ziffer1
+	cjne a,#10,next1
+	jmp mehrAls9_1
+next1:
+	call Ausgabe1
+	jmp start
+mehrAls9_1:
+	
+
+	mov Ziffer1,#0
+	call Ausgabe1
 	
 	inc Ziffer2
-	call Ausgabe1
-	call Ausgabe2
 	mov a,Ziffer2
-	cjne a,#9,start
+	cjne a,#10,next2
+	jmp mehrAls9_2
+next2:
+	call Ausgabe2
+	jmp start
+mehrAls9_2:
+
 	mov Ziffer2,#0
-	
+	call Ausgabe2
 	
 	inc Ziffer3
-	call Ausgabe2
-	call Ausgabe3
+	
 	mov a,Ziffer3
-	cjne a,#6,start
+	cjne a,#10,next3
+	jmp mehrAls9_3
+next3:
+	call Ausgabe3
+	jmp start
+mehrAls9_3:
+	
 	mov Ziffer3,#0
 	call Ausgabe3
 	jmp start
+
+kleinerAls:
+	
+
+
+
+ret
+
+
 
 zeit:
 	ret
@@ -75,25 +107,25 @@ verz1Sek:
 	ret
 
 Ausgabe0:
-	call zeit
+	;call zeit
 	mov ICM,Ziffer0
 	setb Digit0
 	clr Digit0
 	ret
 Ausgabe1:
-	call zeit
+	;call zeit
 	mov ICM,Ziffer1
 	setb Digit1
 	clr Digit1
 	ret
 Ausgabe2:
-	call zeit
+	;call zeit
 	mov ICM,Ziffer2
 	setb Digit2
 	clr Digit2
 	ret
 Ausgabe3:
-	call zeit
+	;call zeit
 	mov ICM,Ziffer3
 	setb Digit3
 	clr Digit3

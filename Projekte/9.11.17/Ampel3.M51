@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        02/07/2018  18:44:44  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/21/2018  21:36:07  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -19,7 +19,7 @@ LINK MAP OF MODULE:  Ampel3 (AMPEL1)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     004AH     ABSOLUTE     
+            CODE    0000H     004DH     ABSOLUTE     
 
 
 
@@ -29,66 +29,67 @@ SYMBOL TABLE OF MODULE:  Ampel3 (AMPEL1)
   ----------------------------------
 
   -------         MODULE        AMPEL1
-  B:0090H.1       SYMBOL        A_GELB
-  B:0090H.0       SYMBOL        A_GR
-  B:0090H.2       SYMBOL        A_ROT
-  B:0090H.3       SYMBOL        F_GR
-  B:0090H.4       SYMBOL        F_ROT
+  B:0080H.1       SYMBOL        A_GELB
+  B:0080H.0       SYMBOL        A_GR
+  B:0080H.2       SYMBOL        A_ROT
+  B:0080H.3       SYMBOL        F_GR
+  B:0080H.4       SYMBOL        F_ROT
   C:0000H         SYMBOL        INIT
-  C:0043H         SYMBOL        LOOPK
-  C:0038H         SYMBOL        LOOPL
-  D:0090H         SYMBOL        P1
+  C:0046H         SYMBOL        LOOPK
+  C:003BH         SYMBOL        LOOPL
+  D:0080H         SYMBOL        P0
   C:0010H         SYMBOL        START
-  B:0090H.7       SYMBOL        TASTER
+  B:0080H.7       SYMBOL        TASTER
   D:008CH         SYMBOL        TH0
   D:008AH         SYMBOL        TL0
   D:0089H         SYMBOL        TMOD
-  C:003FH         SYMBOL        ZEITKURZ
-  C:0034H         SYMBOL        ZEITLANG
-  C:0000H         LINE#         11
-  C:0003H         LINE#         12
-  C:0006H         LINE#         13
-  C:0009H         LINE#         14
-  C:000CH         LINE#         15
-  C:000EH         LINE#         16
-  C:0010H         LINE#         22
-  C:0012H         LINE#         24
-  C:0014H         LINE#         25
-  C:0016H         LINE#         27
-  C:0018H         LINE#         29
-  C:001AH         LINE#         30
-  C:001CH         LINE#         31
-  C:001EH         LINE#         32
-BL51 BANKED LINKER/LOCATER V6.22                                                      02/07/2018  18:44:44  PAGE 2
+  C:0042H         SYMBOL        ZEITKURZ
+  C:0037H         SYMBOL        ZEITLANG
+  C:0000H         LINE#         12
+  C:0003H         LINE#         13
+  C:0006H         LINE#         14
+  C:0009H         LINE#         15
+  C:000CH         LINE#         16
+  C:000EH         LINE#         17
+  C:0010H         LINE#         21
+  C:0013H         LINE#         23
+  C:0015H         LINE#         25
+  C:0017H         LINE#         26
+  C:0019H         LINE#         28
+  C:001BH         LINE#         30
+  C:001DH         LINE#         31
+  C:001FH         LINE#         32
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/21/2018  21:36:07  PAGE 2
 
 
-  C:0020H         LINE#         34
-  C:0022H         LINE#         37
-  C:0024H         LINE#         38
-  C:0026H         LINE#         39
-  C:0028H         LINE#         40
-  C:002AH         LINE#         42
-  C:002CH         LINE#         45
-  C:002EH         LINE#         46
-  C:0030H         LINE#         47
-  C:0032H         LINE#         50
-  C:0034H         LINE#         55
-  C:0036H         LINE#         56
-  C:0038H         LINE#         58
-  C:003AH         LINE#         59
-  C:003CH         LINE#         60
-  C:003EH         LINE#         61
-  C:003FH         LINE#         66
-  C:0041H         LINE#         67
-  C:0043H         LINE#         69
-  C:0045H         LINE#         70
-  C:0047H         LINE#         71
-  C:0049H         LINE#         72
+  C:0021H         LINE#         33
+  C:0023H         LINE#         35
+  C:0025H         LINE#         38
+  C:0027H         LINE#         39
+  C:0029H         LINE#         40
+  C:002BH         LINE#         41
+  C:002DH         LINE#         43
+  C:002FH         LINE#         46
+  C:0031H         LINE#         47
+  C:0033H         LINE#         48
+  C:0035H         LINE#         51
+  C:0037H         LINE#         56
+  C:0039H         LINE#         57
+  C:003BH         LINE#         59
+  C:003DH         LINE#         60
+  C:003FH         LINE#         61
+  C:0041H         LINE#         62
+  C:0042H         LINE#         67
+  C:0044H         LINE#         68
+  C:0046H         LINE#         70
+  C:0048H         LINE#         71
+  C:004AH         LINE#         72
+  C:004CH         LINE#         73
   -------         ENDMOD        AMPEL1
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004AH BYTE ( 3%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004DH BYTE ( 3%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=74
+Program Size: data=8.0 xdata=0 code=77
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
