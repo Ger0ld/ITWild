@@ -6,13 +6,14 @@ a_rot equ p0.2
 zaehler1 equ r7
 zaehler2 equ r6
 taster equ p0.7
+Port equ p0
 
 init:
 	
 	mov TMOD,#00000010b
 	mov tl0,#6
 	mov th0,#6
-	mov p0,#10000000
+	mov port,#10000000
 	setb f_rot
 	setb a_gr
 

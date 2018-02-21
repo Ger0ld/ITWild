@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        02/21/2018  21:36:07  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/21/2018  22:02:48  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -38,6 +38,7 @@ SYMBOL TABLE OF MODULE:  Ampel3 (AMPEL1)
   C:0046H         SYMBOL        LOOPK
   C:003BH         SYMBOL        LOOPL
   D:0080H         SYMBOL        P0
+  D:0080H         SYMBOL        PORT
   C:0010H         SYMBOL        START
   B:0080H.7       SYMBOL        TASTER
   D:008CH         SYMBOL        TH0
@@ -45,46 +46,46 @@ SYMBOL TABLE OF MODULE:  Ampel3 (AMPEL1)
   D:0089H         SYMBOL        TMOD
   C:0042H         SYMBOL        ZEITKURZ
   C:0037H         SYMBOL        ZEITLANG
-  C:0000H         LINE#         12
-  C:0003H         LINE#         13
-  C:0006H         LINE#         14
-  C:0009H         LINE#         15
-  C:000CH         LINE#         16
-  C:000EH         LINE#         17
-  C:0010H         LINE#         21
-  C:0013H         LINE#         23
-  C:0015H         LINE#         25
-  C:0017H         LINE#         26
-  C:0019H         LINE#         28
-  C:001BH         LINE#         30
-  C:001DH         LINE#         31
-  C:001FH         LINE#         32
-BL51 BANKED LINKER/LOCATER V6.22                                                      02/21/2018  21:36:07  PAGE 2
+  C:0000H         LINE#         13
+  C:0003H         LINE#         14
+  C:0006H         LINE#         15
+  C:0009H         LINE#         16
+  C:000CH         LINE#         17
+  C:000EH         LINE#         18
+  C:0010H         LINE#         22
+  C:0013H         LINE#         24
+  C:0015H         LINE#         26
+  C:0017H         LINE#         27
+  C:0019H         LINE#         29
+  C:001BH         LINE#         31
+  C:001DH         LINE#         32
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/21/2018  22:02:48  PAGE 2
 
 
-  C:0021H         LINE#         33
-  C:0023H         LINE#         35
-  C:0025H         LINE#         38
-  C:0027H         LINE#         39
-  C:0029H         LINE#         40
-  C:002BH         LINE#         41
-  C:002DH         LINE#         43
-  C:002FH         LINE#         46
-  C:0031H         LINE#         47
-  C:0033H         LINE#         48
-  C:0035H         LINE#         51
-  C:0037H         LINE#         56
-  C:0039H         LINE#         57
-  C:003BH         LINE#         59
-  C:003DH         LINE#         60
-  C:003FH         LINE#         61
-  C:0041H         LINE#         62
-  C:0042H         LINE#         67
-  C:0044H         LINE#         68
-  C:0046H         LINE#         70
-  C:0048H         LINE#         71
-  C:004AH         LINE#         72
-  C:004CH         LINE#         73
+  C:001FH         LINE#         33
+  C:0021H         LINE#         34
+  C:0023H         LINE#         36
+  C:0025H         LINE#         39
+  C:0027H         LINE#         40
+  C:0029H         LINE#         41
+  C:002BH         LINE#         42
+  C:002DH         LINE#         44
+  C:002FH         LINE#         47
+  C:0031H         LINE#         48
+  C:0033H         LINE#         49
+  C:0035H         LINE#         52
+  C:0037H         LINE#         57
+  C:0039H         LINE#         58
+  C:003BH         LINE#         60
+  C:003DH         LINE#         61
+  C:003FH         LINE#         62
+  C:0041H         LINE#         63
+  C:0042H         LINE#         68
+  C:0044H         LINE#         69
+  C:0046H         LINE#         71
+  C:0048H         LINE#         72
+  C:004AH         LINE#         73
+  C:004CH         LINE#         74
   -------         ENDMOD        AMPEL1
 
 ******************************************************************************
