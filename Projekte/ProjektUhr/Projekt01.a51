@@ -14,79 +14,63 @@ init:
 	
 	mov ICM,#11110000b
 	mov ICM,#0
-	mov zaehler1,#40 ;4 = 1 Sekunde verzögerung,40 = 10 Sekunden 
+	mov zaehler1,#40 ;40 = 1 Sekunde verzögerung 
 	mov zaehler2,#100	;Standart 100
 	mov TMOD,#00000010b
 	mov th0,#6 ;Timer soll 250u Sekunden zählen
 	mov tl0,#6
 
 start:
-	;setb tr0
-	;call verz1Sek
-	call Anzeige
 	
+	call verz1Sek
+	call Anzeige ;Ausgabe auf der Anzeige
+	
+	;Ziffer0 erhöhen und überprüfen ob 10
 	inc Ziffer0
 	mov a,Ziffer0
-	cjne a,#10,next
-	jmp mehrAls9
-next:
-	jmp start
-mehrAls9:
-
+	cjne a,#10,start
+	;Ziffer0 zurücksetzen wenn 10 erreicht ist
 	mov Ziffer0,#0
 
+	;Ziffer1 erhöhen und überprüfen ob 10
 	inc Ziffer1
-	
 	mov a,Ziffer1
-	cjne a,#6,next1
-	jmp mehrAls9_1
-next1:
-	jmp start
-mehrAls9_1:
-	
+	cjne a,#6,start
+	;Ziffer1 zurücksetzen wenn 10 erreicht ist
 	mov Ziffer1,#0
 	
+	;Ziffer2 erhöhen 
 	inc Ziffer2
 	
+	;Überprüfen ob Ziffer3 den Wert 2 und Ziffer2 den Wert 4 hat
 	mov a,Ziffer3
 	cjne a,#2,weiter
 	mov a,ziffer2
 	cjne a,#4,weiter
+	
 	call Anzeige
-	call zeit
-	
-	
+	;Endlosschleife
+	Endlosschleife:
+	jmp Endlosschleife
+
 weiter:
+	
 	mov a,Ziffer2
-	cjne a,#10,next2
-	jmp mehrAls9_2
-next2:
-	jmp start
-mehrAls9_2:
+	cjne a,#10,start
 
 	mov Ziffer2,#0
 	
 	inc Ziffer3
 	
 	mov a,Ziffer3
-	cjne a,#10,next3
-	jmp mehrAls9_3
-next3:
-	jmp start
-mehrAls9_3:
+	cjne a,#10,start 
+	
 	mov ziffer3,#0
 	jmp	start
 
-zeit:
-	
-	mov r5 , #256
-	djnz r5,$
-	call zeit
-	ret
-
 verz1Sek:
-	
-	jnb tf0,verz1Sek
+	setb tr0
+	jnb tf0,$
 	clr tf0
 	djnz zaehler1,verz1Sek
 	mov zaehler1,#40
@@ -112,4 +96,5 @@ Anzeige:
 	setb Digit3
 	clr Digit3
 	ret
+	
 	end
