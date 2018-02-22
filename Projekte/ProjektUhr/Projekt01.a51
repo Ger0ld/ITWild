@@ -23,48 +23,48 @@ init:
 start:
 	;setb tr0
 	;call verz1Sek
-	
+	call Anzeige
 	
 	inc Ziffer0
 	mov a,Ziffer0
 	cjne a,#10,next
 	jmp mehrAls9
 next:
-	call Ausgabe0
 	jmp start
 mehrAls9:
 
 	mov Ziffer0,#0
-	
-	call Ausgabe0
-	
-	
 
 	inc Ziffer1
 	
 	mov a,Ziffer1
-	cjne a,#10,next1
+	cjne a,#6,next1
 	jmp mehrAls9_1
 next1:
-	call Ausgabe1
 	jmp start
 mehrAls9_1:
 	
-
 	mov Ziffer1,#0
-	call Ausgabe1
 	
 	inc Ziffer2
+	
+	mov a,Ziffer3
+	cjne a,#2,weiter
+	mov a,ziffer2
+	cjne a,#4,weiter
+	call Anzeige
+	call zeit
+	
+	
+weiter:
 	mov a,Ziffer2
 	cjne a,#10,next2
 	jmp mehrAls9_2
 next2:
-	call Ausgabe2
 	jmp start
 mehrAls9_2:
 
 	mov Ziffer2,#0
-	call Ausgabe2
 	
 	inc Ziffer3
 	
@@ -72,27 +72,16 @@ mehrAls9_2:
 	cjne a,#10,next3
 	jmp mehrAls9_3
 next3:
-	call Ausgabe3
 	jmp start
 mehrAls9_3:
-	
-	mov Ziffer3,#0
-	call Ausgabe3
-	jmp start
-
-kleinerAls:
-	
-
-
-
-ret
-
-
+	mov ziffer3,#0
+	jmp	start
 
 zeit:
-	ret
-	mov r5 , #5
+	
+	mov r5 , #256
 	djnz r5,$
+	call zeit
 	ret
 
 verz1Sek:
@@ -106,26 +95,19 @@ verz1Sek:
 	clr tr0
 	ret
 
-Ausgabe0:
-	;call zeit
+Anzeige:
 	mov ICM,Ziffer0
 	setb Digit0
 	clr Digit0
-	ret
-Ausgabe1:
-	;call zeit
+	
 	mov ICM,Ziffer1
 	setb Digit1
 	clr Digit1
-	ret
-Ausgabe2:
-	;call zeit
+	
 	mov ICM,Ziffer2
 	setb Digit2
 	clr Digit2
-	ret
-Ausgabe3:
-	;call zeit
+	
 	mov ICM,Ziffer3
 	setb Digit3
 	clr Digit3
