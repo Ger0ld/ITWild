@@ -1,0 +1,125 @@
+A51 MACRO ASSEMBLER  PARKHAUS                                                             03/08/2018 08:57:42 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN parkhaus.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE parkhaus.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     deklaration:
+                       2     
+  0090                 3     port equ p1
+  0095                 4     schrankeRein equ port.5
+  0096                 5     schrankeRaus equ port.6
+  0097                 6     ampel equ port.7
+  REG                  7     zaehler equ r7
+                       8     
+0000 020015            9     ljmp init
+                      10     
+0003                  11     org 03h
+0003 8022             12     jmp in
+                      13     
+0013                  14     org 13h
+0013 8023             15     jmp out
+                      16     
+                      17     
+                      18     
+                      19     
+0015                  20     init:
+                      21     
+0015 7F1F             22             mov zaehler,#31
+0017 8F90             23             mov port,zaehler
+0019 D2AF             24             setb EA
+001B D2A8             25             setb EX0 ;Interrupt P3.2 aktiviert und Modus auf 1
+001D D288             26             setb IT0 
+001F D2AA             27             setb EX1 ;Interrupt P3.3 aktiviert und Modus auf 1
+0021 D28A             28             setb IT1 
+0023 D297             29             setb ampel
+                      30             
+0025                  31     start:
+                      32     
+0025 80FE             33     jmp start
+                      34     
+0027                  35     in:
+0027 D2B2             36             setb p3.2
+0029 EF               37             mov a,zaehler 
+002A B40001           38             cjne a,#0,weiterIn
+002D 32               39             reti
+002E                  40             weiterIn:
+002E D295             41             setb schrankeRein
+0030 1F               42             dec zaehler
+0031 1151             43             call anzeige
+0033 1147             44             call ausgabe
+0035 C295             45             clr schrankeRein
+0037 32               46             reti
+                      47     
+0038                  48     out:
+0038 D2B3             49             setb p3.3
+003A EF               50             mov a,zaehler
+003B B41F01           51             cjne a,#31,weiterOut
+003E 32               52             reti
+003F                  53             weiterOut:
+003F D296             54             setb schrankeRaus
+0041 0F               55             inc zaehler
+0042 1151             56             call anzeige
+0044 C296             57             clr schrankeRaus
+0046 32               58             reti
+A51 MACRO ASSEMBLER  PARKHAUS                                                             03/08/2018 08:57:42 PAGE     2
+
+                      59     
+0047                  60     ausgabe:
+0047 EF               61             mov a,zaehler
+0048 B40003           62             cjne a,#0,AmpelAn
+004B C297             63             clr ampel
+004D 22               64             ret
+004E                  65             AmpelAn:
+004E D297             66             setb ampel
+0050 22               67             ret
+                      68     
+0051                  69     anzeige:
+0051 E590             70             mov a,port
+0053 4F               71             orl a,zaehler
+0054 F590             72             mov port,a
+0056 22               73             ret
+                      74     
+                      75     
+                      76     end
+                             
+                                     
+A51 MACRO ASSEMBLER  PARKHAUS                                                             03/08/2018 08:57:42 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AMPEL. . . . . . .  B ADDR   0090H.7 A   
+AMPELAN. . . . . .  C ADDR   004EH   A   
+ANZEIGE. . . . . .  C ADDR   0051H   A   
+AUSGABE. . . . . .  C ADDR   0047H   A   
+DEKLARATION. . . .  C ADDR   0000H   A   
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+EX0. . . . . . . .  B ADDR   00A8H.0 A   
+EX1. . . . . . . .  B ADDR   00A8H.2 A   
+IN . . . . . . . .  C ADDR   0027H   A   
+INIT . . . . . . .  C ADDR   0015H   A   
+IT0. . . . . . . .  B ADDR   0088H.0 A   
+IT1. . . . . . . .  B ADDR   0088H.2 A   
+OUT. . . . . . . .  C ADDR   0038H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PORT . . . . . . .  D ADDR   0090H   A   
+SCHRANKERAUS . . .  B ADDR   0090H.6 A   
+SCHRANKEREIN . . .  B ADDR   0090H.5 A   
+START. . . . . . .  C ADDR   0025H   A   
+WEITERIN . . . . .  C ADDR   002EH   A   
+WEITEROUT. . . . .  C ADDR   003FH   A   
+ZAEHLER. . . . . .    REG    R7          
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
