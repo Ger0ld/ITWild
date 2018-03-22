@@ -1,0 +1,96 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/22/2018  08:54:56  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE TimerMitInterrupt.obj TO Timer RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  TimerMitInterrupt.obj (TIMERMITINTERRUPT)
+
+
+LINK MAP OF MODULE:  Timer (TIMERMITINTERRUPT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0049H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Timer (TIMERMITINTERRUPT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TIMERMITINTERRUPT
+  B:0090H.0       SYMBOL        AUSG0
+  B:0090H.1       SYMBOL        AUSG1
+  B:0090H.3       SYMBOL        AUSG2
+  B:00A8H.7       SYMBOL        EA
+  B:00A8H.3       SYMBOL        ET1
+  C:0033H         SYMBOL        HIER
+  C:0038H         SYMBOL        IROUTINE
+  N:0000H         SYMBOL        OFFSET
+  D:0090H         SYMBOL        P1
+  D:00A0H         SYMBOL        P2
+  D:00A0H         SYMBOL        PORT
+  C:0047H         SYMBOL        RETURN
+  C:002AH         SYMBOL        SCHLEIFE
+  C:000DH         SYMBOL        START
+  D:008CH         SYMBOL        TH0
+  D:008DH         SYMBOL        TH1
+  C:0048H         SYMBOL        TIMER0
+  D:008AH         SYMBOL        TL0
+  D:008BH         SYMBOL        TL1
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  B:0088H.6       SYMBOL        TR1
+  C:002FH         SYMBOL        ZEIT
+  C:0000H         LINE#         11
+  C:001BH         LINE#         14
+  C:000BH         LINE#         17
+  C:000DH         LINE#         20
+  C:000FH         LINE#         21
+  C:0011H         LINE#         22
+  C:0013H         LINE#         23
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/22/2018  08:54:56  PAGE 2
+
+
+  C:0016H         LINE#         24
+  C:0019H         LINE#         25
+  C:001CH         LINE#         26
+  C:001FH         LINE#         27
+  C:0022H         LINE#         28
+  C:0024H         LINE#         29
+  C:0026H         LINE#         30
+  C:0028H         LINE#         31
+  C:002AH         LINE#         35
+  C:002CH         LINE#         37
+  C:002FH         LINE#         40
+  C:0031H         LINE#         41
+  C:0033H         LINE#         43
+  C:0035H         LINE#         44
+  C:0037H         LINE#         45
+  C:0038H         LINE#         48
+  C:003BH         LINE#         49
+  C:003EH         LINE#         50
+  C:003FH         LINE#         51
+  C:0040H         LINE#         53
+  C:0043H         LINE#         54
+  C:0045H         LINE#         55
+  C:0047H         LINE#         57
+  C:0048H         LINE#         61
+  -------         ENDMOD        TIMERMITINTERRUPT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0043H BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=73
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

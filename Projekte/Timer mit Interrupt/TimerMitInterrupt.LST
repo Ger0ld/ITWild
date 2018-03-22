@@ -1,0 +1,113 @@
+A51 MACRO ASSEMBLER  TIMERMITINTERRUPT                                                    03/22/2018 08:54:56 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN TimerMitInterrupt.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE TimerMitInterrupt.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0000                 1     Offset equ 0h
+0000                   2     org offset
+  0090                 3     ausg0 equ p1.0
+  0091                 4     ausg1 equ p1.1
+  0093                 5     ausg2 equ p1.3
+  REG                  6     zaehler equ r5
+  REG                  7     zaehler1 equ r4
+  REG                  8     zaehler2 equ r3
+  00A0                 9     port equ p2
+                      10     
+0000 02000D           11     ljmp start
+                      12     
+001B                  13     org offset+1bh
+001B 801B             14     jmp IRoutine
+                      15     
+000B                  16     org offset+0bh
+000B 803B             17     jmp timer0
+                      18     
+000D                  19     start:
+000D 7CA7             20             mov zaehler1,#167
+000F 7B04             21             mov zaehler2,#4
+0011 7D00             22             mov zaehler,#0
+0013 758912           23             mov tmod,#00010010b
+0016 758A06           24             mov tl0,#6
+0019 758C06           25             mov th0,#6
+001C 758D3C           26             mov TH1,#3Ch
+001F 758BB0           27             mov TL1,#0B0h
+0022 D2AB             28             setb et1
+0024 D2AF             29             setb ea
+0026 D28E             30             setb tr1
+0028 D28C             31             setb tr0
+                      32     
+002A                  33     schleife:
+                      34             
+002A B290             35             cpl ausg0
+                      36             ;acall zeit
+002C 02002A           37             ljmp schleife
+                      38     
+002F                  39     Zeit:
+002F 7F00             40             mov r7,#0
+0031 7E00             41             mov r6,#0
+0033                  42     hier:
+0033 DEFE             43             djnz r6,hier
+0035 DFFC             44             djnz r7,hier
+0037 22               45             ret
+                      46             
+0038                  47     IRoutine: ;Steuerung von ausg1
+0038 758BAE           48             mov TL1,#0AEh ;Nachladen - 2 MZ wegen mov
+003B 758D3C           49             mov TH1,#3Ch
+003E 0D               50             inc zaehler
+003F ED               51             mov a,zaehler
+                      52             ;cjne a,port,return ;Steuerung mit Port2
+0040 B40A04           53             cjne a,#10,return ;Blinkt alle 0,5 sec
+0043 7D00             54             mov zaehler,#0
+0045 B291             55             cpl ausg1 
+0047                  56     return:
+0047 32               57             reti
+                      58             
+A51 MACRO ASSEMBLER  TIMERMITINTERRUPT                                                    03/22/2018 08:54:56 PAGE     2
+
+0048                  59     timer0:
+                      60             
+0048 32               61             reti
+                      62     end
+A51 MACRO ASSEMBLER  TIMERMITINTERRUPT                                                    03/22/2018 08:54:56 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AUSG0. . . . . . .  B ADDR   0090H.0 A   
+AUSG1. . . . . . .  B ADDR   0090H.1 A   
+AUSG2. . . . . . .  B ADDR   0090H.3 A   
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+ET1. . . . . . . .  B ADDR   00A8H.3 A   
+HIER . . . . . . .  C ADDR   0033H   A   
+IROUTINE . . . . .  C ADDR   0038H   A   
+OFFSET . . . . . .  N NUMB   0000H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+PORT . . . . . . .  D ADDR   00A0H   A   
+RETURN . . . . . .  C ADDR   0047H   A   
+SCHLEIFE . . . . .  C ADDR   002AH   A   
+START. . . . . . .  C ADDR   000DH   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TIMER0 . . . . . .  C ADDR   0048H   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+ZAEHLER. . . . . .    REG    R5          
+ZAEHLER1 . . . . .    REG    R4          
+ZAEHLER2 . . . . .    REG    R3          
+ZEIT . . . . . . .  C ADDR   002FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
