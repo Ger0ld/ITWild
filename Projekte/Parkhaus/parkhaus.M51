@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        03/08/2018  08:57:42  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/22/2018  08:41:35  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -19,7 +19,7 @@ LINK MAP OF MODULE:  parkhaus (PARKHAUS)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0057H     ABSOLUTE     
+            CODE    0000H     005BH     ABSOLUTE     
 
 
 
@@ -50,55 +50,58 @@ SYMBOL TABLE OF MODULE:  parkhaus (PARKHAUS)
   C:0025H         SYMBOL        START
   C:002EH         SYMBOL        WEITERIN
   C:003FH         SYMBOL        WEITEROUT
-  C:0000H         LINE#         9
-  C:0003H         LINE#         12
-  C:0013H         LINE#         15
-  C:0015H         LINE#         22
-  C:0017H         LINE#         23
-  C:0019H         LINE#         24
-  C:001BH         LINE#         25
-  C:001DH         LINE#         26
-  C:001FH         LINE#         27
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/08/2018  08:57:42  PAGE 2
+  C:0058H         SYMBOL        ZEITVER
+  C:0000H         LINE#         10
+  C:0003H         LINE#         13
+  C:0013H         LINE#         16
+  C:0015H         LINE#         20
+  C:0017H         LINE#         21
+  C:0019H         LINE#         22
+  C:001BH         LINE#         23
+  C:001DH         LINE#         24
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/22/2018  08:41:35  PAGE 2
 
 
-  C:0021H         LINE#         28
-  C:0023H         LINE#         29
-  C:0025H         LINE#         33
-  C:0027H         LINE#         36
-  C:0029H         LINE#         37
-  C:002AH         LINE#         38
-  C:002DH         LINE#         39
-  C:002EH         LINE#         41
-  C:0030H         LINE#         42
-  C:0031H         LINE#         43
-  C:0033H         LINE#         44
-  C:0035H         LINE#         45
-  C:0037H         LINE#         46
-  C:0038H         LINE#         49
-  C:003AH         LINE#         50
-  C:003BH         LINE#         51
-  C:003EH         LINE#         52
-  C:003FH         LINE#         54
-  C:0041H         LINE#         55
-  C:0042H         LINE#         56
-  C:0044H         LINE#         57
-  C:0046H         LINE#         58
-  C:0047H         LINE#         61
-  C:0048H         LINE#         62
-  C:004BH         LINE#         63
-  C:004DH         LINE#         64
-  C:004EH         LINE#         66
-  C:0050H         LINE#         67
-  C:0051H         LINE#         70
-  C:0053H         LINE#         71
-  C:0054H         LINE#         72
-  C:0056H         LINE#         73
+  C:001FH         LINE#         25
+  C:0021H         LINE#         26
+  C:0023H         LINE#         27
+  C:0025H         LINE#         31
+  C:0027H         LINE#         34
+  C:0029H         LINE#         35
+  C:002AH         LINE#         36
+  C:002DH         LINE#         37
+  C:002EH         LINE#         39
+  C:0030H         LINE#         40
+  C:0031H         LINE#         41
+  C:0033H         LINE#         42
+  C:0035H         LINE#         43
+  C:0037H         LINE#         44
+  C:0038H         LINE#         47
+  C:003AH         LINE#         48
+  C:003BH         LINE#         49
+  C:003EH         LINE#         50
+  C:003FH         LINE#         52
+  C:0041H         LINE#         53
+  C:0042H         LINE#         54
+  C:0044H         LINE#         55
+  C:0046H         LINE#         56
+  C:0047H         LINE#         59
+  C:0048H         LINE#         60
+  C:004BH         LINE#         61
+  C:004DH         LINE#         62
+  C:004EH         LINE#         64
+  C:0050H         LINE#         65
+  C:0051H         LINE#         68
+  C:0053H         LINE#         69
+  C:0055H         LINE#         70
+  C:0056H         LINE#         71
+  C:0058H         LINE#         73
+  C:005AH         LINE#         74
   -------         ENDMOD        PARKHAUS
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0049H BYTE ( 3%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004DH BYTE ( 3%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=87
+Program Size: data=8.0 xdata=0 code=91
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

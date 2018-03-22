@@ -5,6 +5,7 @@ schrankeRein equ port.5
 schrankeRaus equ port.6
 ampel equ port.7
 zaehler equ r7
+zeit equ r6
 
 ljmp init
 
@@ -13,9 +14,6 @@ jmp in
 
 org 13h
 jmp out
-
-
-
 
 init:
 
@@ -32,7 +30,7 @@ start:
 
 jmp start
 
-in:
+in: ;Auto fährt rein ins Parkhaus
 	setb p3.2
 	mov a,zaehler 
 	cjne a,#0,weiterIn
@@ -45,7 +43,7 @@ in:
 	clr schrankeRein
 	reti
 
-out:
+out:;Auto fährt raus aus dem Parkhaus
 	setb p3.3
 	mov a,zaehler
 	cjne a,#31,weiterOut
@@ -56,8 +54,8 @@ out:
 	call anzeige
 	clr schrankeRaus
 	reti
-
-ausgabe:
+	
+ausgabe: ;Die Ampel steurung
 	mov a,zaehler
 	cjne a,#0,AmpelAn
 	clr ampel
@@ -66,12 +64,14 @@ ausgabe:
 	setb ampel
 	ret
 
-anzeige:
+anzeige: ;Die Zahl auf der Anzeige ausgeben
 	mov a,port
+	anl a,#11100000b
 	orl a,zaehler
 	mov port,a
+zeitver:
+	djnz zeit,zeitver
 	ret
-
 
 end
 
