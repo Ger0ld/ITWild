@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <body>
 <pre>
@@ -13,3 +14,68 @@ linking...
 Program Size: data=8.0 xdata=0 code=73
 creating hex file from "Timer"...
 "Timer" - 0 Error(s), 0 Warning(s).
+=======
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Gerold\GitHub\ITWild\Projekte\Timer mit Interrupt\Timer.uvproj
+Project File Date:  03/15/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(23): error A9: SYNTAX ERROR
+Timer.a51(52): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(52): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=78
+"Timer" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(52): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=78
+"Timer" - 0 Error(s), 1 Warning(s).
+assembling Timer.a51...
+Timer.a51(18): error A45: UNDEFINED SYMBOL (PASS-2)
+Timer.a51(45): error A45: UNDEFINED SYMBOL (PASS-2)
+Timer.a51(49): error A45: UNDEFINED SYMBOL (PASS-2)
+Timer.a51(61): warning A41: MISSING 'END' STATEMENT
+Timer.a51 - 3 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(18): error A45: UNDEFINED SYMBOL (PASS-2)
+Timer.a51(45): error A45: UNDEFINED SYMBOL (PASS-2)
+Timer.a51(49): error A45: UNDEFINED SYMBOL (PASS-2)
+Timer.a51(61): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(61): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=95
+"Timer" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(63): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=101
+"Timer" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Timer.a51...
+Timer.a51(63): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=101
+"Timer" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Timer.a51...
+Timer.a51(63): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=101
+"Timer" - 0 Error(s), 1 Warning(s).
+>>>>>>> Timer-mit-Interrupt

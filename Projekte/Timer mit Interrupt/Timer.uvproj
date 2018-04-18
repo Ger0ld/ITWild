@@ -47,7 +47,11 @@
           <OutputName>Timer</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
+<<<<<<< HEAD
           <CreateHexFile>1</CreateHexFile>
+=======
+          <CreateHexFile>0</CreateHexFile>
+>>>>>>> Timer-mit-Interrupt
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\</ListingPath>
@@ -126,7 +130,11 @@
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
             <RestoreFunctions>1</RestoreFunctions>
             <RestoreToolbox>1</RestoreToolbox>
+<<<<<<< HEAD
             <LimitSpeedToRealTime>1</LimitSpeedToRealTime>
+=======
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+>>>>>>> Timer-mit-Interrupt
           </Simulator>
           <Target>
             <UseTarget>0</UseTarget>
@@ -218,7 +226,11 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
+<<<<<<< HEAD
                 <Size>0xffff</Size>
+=======
+                <Size>0x0</Size>
+>>>>>>> Timer-mit-Interrupt
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -352,9 +364,15 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
+<<<<<<< HEAD
               <FileName>TimerMitInterrupt.a51</FileName>
               <FileType>2</FileType>
               <FilePath>.\TimerMitInterrupt.a51</FilePath>
+=======
+              <FileName>Timer.a51</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Timer.a51</FilePath>
+>>>>>>> Timer-mit-Interrupt
             </File>
           </Files>
         </Group>
