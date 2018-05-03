@@ -1,0 +1,127 @@
+A51 MACRO ASSEMBLER  STOPUHR                                                              05/03/2018 08:45:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Stopuhr.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE Stopuhr.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+  REG                  1     ziffer0 equ r7
+  REG                  2     ziffer1 equ r6
+  REG                  3     ziffer2 equ r5
+  REG                  4     ziffer3 equ r4
+  0001                 5     cplbit equ 20h.1h
+                       6     
+0000 800B              7     jmp init
+                       8     
+0003                   9     org 03h
+0003 8040             10     jmp extern0
+                      11     
+0013                  12     org 13h
+0013 804A             13     jmp extern1
+                      14     
+000B                  15     org 0bh
+000B 8015             16     jmp timer0
+                      17     
+000D                  18     init:
+                      19     
+000D 758901           20             mov tmod, #00000001b
+0010 758CD8           21             mov th0, #0D8h
+0013 758AF0           22             mov tl0, #0F0h
+                      23             
+0016 D201             24             setb cplbit
+0018 D2A8             25             setb ex0
+001A D2AA             26             setb ex1
+001C D2A9             27             setb et0
+001E D2AF             28             setb ea
+                      29             
+0020                  30     main:
+0020 80FE             31             jmp main
+                      32             
+0022                  33     timer0:
+                      34     
+0022 758AEC           35             mov tl0, #0ECh
+0025 758CD8           36             mov th0, #0D8h
+                      37             
+0028 0F               38             inc ziffer0
+0029 EF               39             mov a,ziffer0
+002A B40A31           40             cjne a,#10,return
+                      41     
+002D 7F00             42             mov ziffer0,#0
+002F 0E               43             inc ziffer1
+0030 EE               44             mov a,ziffer1
+0031 B40A2A           45             cjne a,#10,return
+                      46     
+0034 7E00             47             mov ziffer1,#0
+0036 0D               48             inc ziffer2
+0037 ED               49             mov a,ziffer2
+0038 B40A23           50             cjne a,#10,return
+                      51     
+003B 7D00             52             mov ziffer2,#0
+003D 0C               53             inc ziffer3
+003E EC               54             mov a,ziffer3
+003F B40A1C           55             cjne a,#10,return
+                      56             
+0042 C2A9             57             clr et0 
+                      58             
+A51 MACRO ASSEMBLER  STOPUHR                                                              05/03/2018 08:45:54 PAGE     2
+
+0044 32               59             reti
+                      60     
+0045                  61     extern0:
+                      62             
+0045 D2B2             63             setb p3.2
+0047 D28C             64             setb tr0
+0049 B201             65             cpl cplbit
+004B 300110           66             jnb cplbit,return
+004E C28C             67             clr tr0
+0050 758CD8           68             mov th0, #0D8h
+0053 758AF0           69             mov tl0, #0F0h
+0056 7F00             70             mov ziffer0, #0
+0058 7E00             71             mov ziffer1, #0
+005A 7D00             72             mov ziffer2, #0
+005C 7C00             73             mov ziffer3, #0
+                      74     
+005E                  75             return:
+005E 32               76             reti
+                      77     
+005F                  78     extern1:
+                      79             
+005F C28C             80             clr tr0
+0061 32               81             reti
+*** WARNING #A41 IN 81 (Stopuhr.a51, LINE 81): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  STOPUHR                                                              05/03/2018 08:45:54 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CPLBIT . . . . . .  B ADDR   0020H.1 A   
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+ET0. . . . . . . .  B ADDR   00A8H.1 A   
+EX0. . . . . . . .  B ADDR   00A8H.0 A   
+EX1. . . . . . . .  B ADDR   00A8H.2 A   
+EXTERN0. . . . . .  C ADDR   0045H   A   
+EXTERN1. . . . . .  C ADDR   005FH   A   
+INIT . . . . . . .  C ADDR   000DH   A   
+MAIN . . . . . . .  C ADDR   0020H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+RETURN . . . . . .  C ADDR   005EH   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TIMER0 . . . . . .  C ADDR   0022H   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+ZIFFER0. . . . . .    REG    R7          
+ZIFFER1. . . . . .    REG    R6          
+ZIFFER2. . . . . .    REG    R5          
+ZIFFER3. . . . . .    REG    R4          
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,173 @@
+A51 MACRO ASSEMBLER  PROJEKT01                                                            02/22/2018 08:58:05 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Projekt01.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE Projekt01.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0090                 1     ICM equ P1
+  0030                 2             Ziffer0 equ 30h
+  0031                 3             Ziffer1 equ 31h
+  0032                 4             Ziffer2 equ 32h
+  0033                 5             Ziffer3 equ 33h
+  0094                 6             Digit0 equ ICM.4
+  0095                 7             Digit1 equ ICM.5
+  0096                 8             Digit2 equ ICM.6
+  0097                 9             Digit3 equ ICM.7
+  REG                 10             zaehler1 equ r7
+  REG                 11             zaehler2 equ r6
+                      12             
+0000                  13     init:
+                      14             
+0000 7590F0           15             mov ICM,#11110000b
+0003 759000           16             mov ICM,#0
+0006 7F28             17             mov zaehler1,#40 ;4 = 1 Sekunde verzögerung,40 = 10 Sekunden 
+0008 7E64             18             mov zaehler2,#100       ;Standart 100
+000A 758902           19             mov TMOD,#00000010b
+000D 758C06           20             mov th0,#6 ;Timer soll 250u Sekunden zählen
+0010 758A06           21             mov tl0,#6
+                      22     
+0013                  23     start:
+                      24             ;setb tr0
+                      25             ;call verz1Sek
+0013 1174             26             call Anzeige
+                      27             
+0015 0530             28             inc Ziffer0
+0017 E530             29             mov a,Ziffer0
+0019 B40A02           30             cjne a,#10,next
+001C 8002             31             jmp mehrAls9
+001E                  32     next:
+001E 80F3             33             jmp start
+0020                  34     mehrAls9:
+                      35     
+0020 753000           36             mov Ziffer0,#0
+                      37     
+0023 0531             38             inc Ziffer1
+                      39             
+0025 E531             40             mov a,Ziffer1
+0027 B40602           41             cjne a,#6,next1
+002A 8002             42             jmp mehrAls9_1
+002C                  43     next1:
+002C 80E5             44             jmp start
+002E                  45     mehrAls9_1:
+                      46             
+002E 753100           47             mov Ziffer1,#0
+                      48             
+0031 0532             49             inc Ziffer2
+                      50             
+0033 E533             51             mov a,Ziffer3
+0035 B40209           52             cjne a,#2,weiter
+0038 E532             53             mov a,ziffer2
+003A B40404           54             cjne a,#4,weiter
+003D 1174             55             call Anzeige
+003F 115D             56             call zeit
+                      57             
+                      58             
+A51 MACRO ASSEMBLER  PROJEKT01                                                            02/22/2018 08:58:05 PAGE     2
+
+0041                  59     weiter:
+0041 E532             60             mov a,Ziffer2
+0043 B40A02           61             cjne a,#10,next2
+0046 8002             62             jmp mehrAls9_2
+0048                  63     next2:
+0048 80C9             64             jmp start
+004A                  65     mehrAls9_2:
+                      66     
+004A 753200           67             mov Ziffer2,#0
+                      68             
+004D 0533             69             inc Ziffer3
+                      70             
+004F E533             71             mov a,Ziffer3
+0051 B40A02           72             cjne a,#10,next3
+0054 8002             73             jmp mehrAls9_3
+0056                  74     next3:
+0056 80BB             75             jmp start
+0058                  76     mehrAls9_3:
+0058 753300           77             mov ziffer3,#0
+005B 80B6             78             jmp     start
+                      79     
+005D                  80     zeit:
+                      81             
+005D 7D00             82             mov r5 , #256
+*** ___________________________________________^
+*** WARNING #A52 IN 82 (Projekt01.a51, LINE 82): VALUE HAS BEEN TRUNCATED TO 8 BITS
+005F DDFE             83             djnz r5,$
+0061 115D             84             call zeit
+0063 22               85             ret
+                      86     
+0064                  87     verz1Sek:
+                      88             
+0064 308DFD           89             jnb tf0,verz1Sek
+0067 C28D             90             clr tf0
+0069 DFF9             91             djnz zaehler1,verz1Sek
+006B 7F28             92             mov zaehler1,#40
+006D DEF5             93             djnz zaehler2,verz1Sek
+006F 7E64             94             mov zaehler2,#100
+0071 C28C             95             clr tr0
+0073 22               96             ret
+                      97     
+0074                  98     Anzeige:
+0074 853090           99             mov ICM,Ziffer0
+0077 D294            100             setb Digit0
+0079 C294            101             clr Digit0
+                     102             
+007B 853190          103             mov ICM,Ziffer1
+007E D295            104             setb Digit1
+0080 C295            105             clr Digit1
+                     106             
+0082 853290          107             mov ICM,Ziffer2
+0085 D296            108             setb Digit2
+0087 C296            109             clr Digit2
+                     110             
+0089 853390          111             mov ICM,Ziffer3
+008C D297            112             setb Digit3
+008E C297            113             clr Digit3
+0090 22              114             ret
+                     115             end
+A51 MACRO ASSEMBLER  PROJEKT01                                                            02/22/2018 08:58:05 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ANZEIGE. . . . . .  C ADDR   0074H   A   
+DIGIT0 . . . . . .  B ADDR   0090H.4 A   
+DIGIT1 . . . . . .  B ADDR   0090H.5 A   
+DIGIT2 . . . . . .  B ADDR   0090H.6 A   
+DIGIT3 . . . . . .  B ADDR   0090H.7 A   
+ICM. . . . . . . .  D ADDR   0090H   A   
+INIT . . . . . . .  C ADDR   0000H   A   
+MEHRALS9 . . . . .  C ADDR   0020H   A   
+MEHRALS9_1 . . . .  C ADDR   002EH   A   
+MEHRALS9_2 . . . .  C ADDR   004AH   A   
+MEHRALS9_3 . . . .  C ADDR   0058H   A   
+NEXT . . . . . . .  C ADDR   001EH   A   
+NEXT1. . . . . . .  C ADDR   002CH   A   
+NEXT2. . . . . . .  C ADDR   0048H   A   
+NEXT3. . . . . . .  C ADDR   0056H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+START. . . . . . .  C ADDR   0013H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+VERZ1SEK . . . . .  C ADDR   0064H   A   
+WEITER . . . . . .  C ADDR   0041H   A   
+ZAEHLER1 . . . . .    REG    R7          
+ZAEHLER2 . . . . .    REG    R6          
+ZEIT . . . . . . .  C ADDR   005DH   A   
+ZIFFER0. . . . . .  N NUMB   0030H   A   
+ZIFFER1. . . . . .  N NUMB   0031H   A   
+ZIFFER2. . . . . .  N NUMB   0032H   A   
+ZIFFER3. . . . . .  N NUMB   0033H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)
