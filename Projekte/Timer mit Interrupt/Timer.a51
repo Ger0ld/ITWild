@@ -19,42 +19,34 @@ Start:
 	mov counter2,#0
 	mov zeitv1,#0
 	mov zeitv2,#0
-	mov TMOD,#00100010b
+	mov TMOD,#00010010b
 	setb ea
 	setb et1
 	setb et0
-	mov tl1,#11110010b
-	mov th1,#110000b
+	mov tl1,#0B0h			;50ms
+	mov th1,#3Ch
 	mov tl0,#6
 	mov th0,#6
 	setb tr0
 	setb tr1
 	
 Loop:
-
-	call zeit
 	jmp loop
-	
-zeit:
-	
-	djnz zeitv1,zeit
-	djnz zeitv2,zeit
-	ret
 	
 interrupt0:
 	djnz counter,return
+	mov counter,#167
 	inc counter2
 	mov a,counter2
-	cjne a,#10,return
-	mov counter,#167
+	cjne a,#4,return
 	mov counter2,#0
 	cpl anz0
 return:
 	reti
 
 interrupt1:
-	mov tl1,#11110010b
-	mov th1,#110000b
+	mov tl1,#0B0h
+	mov th1,#3Ch
 	inc counter1
 	mov a,counter1
 	cjne a,#10,return

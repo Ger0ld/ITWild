@@ -1,106 +1,8 @@
-<<<<<<< HEAD
-BL51 BANKED LINKER/LOCATER V6.22                                                        03/22/2018  08:54:56  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/19/2018  09:05:23  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL\C51\BIN\BL51.EXE TimerMitInterrupt.obj TO Timer RAMSIZE (256)
-
-
-INPUT MODULES INCLUDED:
-  TimerMitInterrupt.obj (TIMERMITINTERRUPT)
-
-
-LINK MAP OF MODULE:  Timer (TIMERMITINTERRUPT)
-
-
-            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
-            -----------------------------------------------------
-
-            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
-            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-
-            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0049H     ABSOLUTE     
-
-
-
-SYMBOL TABLE OF MODULE:  Timer (TIMERMITINTERRUPT)
-
-  VALUE           TYPE          NAME
-  ----------------------------------
-
-  -------         MODULE        TIMERMITINTERRUPT
-  B:0090H.0       SYMBOL        AUSG0
-  B:0090H.1       SYMBOL        AUSG1
-  B:0090H.3       SYMBOL        AUSG2
-  B:00A8H.7       SYMBOL        EA
-  B:00A8H.3       SYMBOL        ET1
-  C:0033H         SYMBOL        HIER
-  C:0038H         SYMBOL        IROUTINE
-  N:0000H         SYMBOL        OFFSET
-  D:0090H         SYMBOL        P1
-  D:00A0H         SYMBOL        P2
-  D:00A0H         SYMBOL        PORT
-  C:0047H         SYMBOL        RETURN
-  C:002AH         SYMBOL        SCHLEIFE
-  C:000DH         SYMBOL        START
-  D:008CH         SYMBOL        TH0
-  D:008DH         SYMBOL        TH1
-  C:0048H         SYMBOL        TIMER0
-  D:008AH         SYMBOL        TL0
-  D:008BH         SYMBOL        TL1
-  D:0089H         SYMBOL        TMOD
-  B:0088H.4       SYMBOL        TR0
-  B:0088H.6       SYMBOL        TR1
-  C:002FH         SYMBOL        ZEIT
-  C:0000H         LINE#         11
-  C:001BH         LINE#         14
-  C:000BH         LINE#         17
-  C:000DH         LINE#         20
-  C:000FH         LINE#         21
-  C:0011H         LINE#         22
-  C:0013H         LINE#         23
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/22/2018  08:54:56  PAGE 2
-
-
-  C:0016H         LINE#         24
-  C:0019H         LINE#         25
-  C:001CH         LINE#         26
-  C:001FH         LINE#         27
-  C:0022H         LINE#         28
-  C:0024H         LINE#         29
-  C:0026H         LINE#         30
-  C:0028H         LINE#         31
-  C:002AH         LINE#         35
-  C:002CH         LINE#         37
-  C:002FH         LINE#         40
-  C:0031H         LINE#         41
-  C:0033H         LINE#         43
-  C:0035H         LINE#         44
-  C:0037H         LINE#         45
-  C:0038H         LINE#         48
-  C:003BH         LINE#         49
-  C:003EH         LINE#         50
-  C:003FH         LINE#         51
-  C:0040H         LINE#         53
-  C:0043H         LINE#         54
-  C:0045H         LINE#         55
-  C:0047H         LINE#         57
-  C:0048H         LINE#         61
-  -------         ENDMOD        TIMERMITINTERRUPT
-
-******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0043H BYTE ( 3%) *
-******************************************************************************
-
-Program Size: data=8.0 xdata=0 code=73
-LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
-=======
-BL51 BANKED LINKER/LOCATER V6.22                                                        03/15/2018  20:35:38  PAGE 1
-
-
-BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL_V5\C51\BIN\BL51.EXE Timer.obj TO Timer RAMSIZE (256)
+C:\KEIL\C51\BIN\BL51.EXE Timer.obj TO Timer RAMSIZE (256)
 
 
 INPUT MODULES INCLUDED:
@@ -117,7 +19,7 @@ LINK MAP OF MODULE:  Timer (TIMER)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     0065H     ABSOLUTE     
+            CODE    0000H     005EH     ABSOLUTE     
 
 
 
@@ -132,11 +34,11 @@ SYMBOL TABLE OF MODULE:  Timer (TIMER)
   B:00A8H.7       SYMBOL        EA
   B:00A8H.1       SYMBOL        ET0
   B:00A8H.3       SYMBOL        ET1
-  C:0047H         SYMBOL        INTERRUPT0
-  C:0055H         SYMBOL        INTERRUPT1
+  C:0040H         SYMBOL        INTERRUPT0
+  C:004EH         SYMBOL        INTERRUPT1
   C:003EH         SYMBOL        LOOP
   D:0090H         SYMBOL        P1
-  C:0054H         SYMBOL        RETURN
+  C:004DH         SYMBOL        RETURN
   C:001DH         SYMBOL        START
   D:008CH         SYMBOL        TH0
   D:008DH         SYMBOL        TH1
@@ -145,7 +47,6 @@ SYMBOL TABLE OF MODULE:  Timer (TIMER)
   D:0089H         SYMBOL        TMOD
   B:0088H.4       SYMBOL        TR0
   B:0088H.6       SYMBOL        TR1
-  C:0042H         SYMBOL        ZEIT
   C:0000H         LINE#         10
   C:000BH         LINE#         12
   C:001BH         LINE#         14
@@ -157,42 +58,37 @@ SYMBOL TABLE OF MODULE:  Timer (TIMER)
   C:0028H         LINE#         23
   C:002AH         LINE#         24
   C:002CH         LINE#         25
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/15/2018  20:35:38  PAGE 2
-
-
   C:002EH         LINE#         26
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/19/2018  09:05:23  PAGE 2
+
+
   C:0031H         LINE#         27
   C:0034H         LINE#         28
   C:0037H         LINE#         29
   C:003AH         LINE#         30
   C:003CH         LINE#         31
-  C:003EH         LINE#         35
-  C:0040H         LINE#         36
-  C:0042H         LINE#         40
-  C:0044H         LINE#         41
-  C:0046H         LINE#         42
-  C:0047H         LINE#         45
-  C:0049H         LINE#         46
-  C:004AH         LINE#         47
-  C:004BH         LINE#         48
-  C:004EH         LINE#         49
-  C:0050H         LINE#         50
-  C:0052H         LINE#         51
-  C:0054H         LINE#         53
-  C:0055H         LINE#         56
-  C:0058H         LINE#         57
-  C:005BH         LINE#         58
-  C:005CH         LINE#         59
-  C:005DH         LINE#         60
-  C:0060H         LINE#         61
-  C:0062H         LINE#         62
-  C:0064H         LINE#         63
+  C:003EH         LINE#         34
+  C:0040H         LINE#         37
+  C:0042H         LINE#         38
+  C:0044H         LINE#         39
+  C:0045H         LINE#         40
+  C:0046H         LINE#         41
+  C:0049H         LINE#         42
+  C:004BH         LINE#         43
+  C:004DH         LINE#         45
+  C:004EH         LINE#         48
+  C:0051H         LINE#         49
+  C:0054H         LINE#         50
+  C:0055H         LINE#         51
+  C:0056H         LINE#         52
+  C:0059H         LINE#         53
+  C:005BH         LINE#         54
+  C:005DH         LINE#         55
   -------         ENDMOD        TIMER
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004EH BYTE ( 3%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0047H BYTE ( 3%) *
 ******************************************************************************
 
-Program Size: data=8.0 xdata=0 code=101
+Program Size: data=8.0 xdata=0 code=94
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
->>>>>>> Timer-mit-Interrupt
