@@ -1,0 +1,193 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/09/2018  17:38:23  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\BL51.EXE .\Objects\Ampel3.obj TO .\Objects\Ampel PRINT (.\Listings\Ampel.m51) RAMSIZE (256
+>> )
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Ampel3.obj (AMPEL3)
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\Ampel (AMPEL3)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+                    0006H     000DH                  *** GAP ***
+            CODE    0013H     0003H     ABSOLUTE     
+                    0016H     07EAH                  *** GAP ***
+            CODE    0800H     004EH     UNIT         ?PR?I_EX0?AMPEL3
+            CODE    084EH     004EH     UNIT         ?PR?I_EX1?AMPEL3
+            CODE    089CH     0018H     UNIT         ?PR?HAUPTSTRASSE?AMPEL3
+            CODE    08B4H     0018H     UNIT         ?PR?NEBENSTRASSE?AMPEL3
+            CODE    08CCH     0013H     UNIT         ?PR?MAIN?AMPEL3
+            CODE    08DFH     000FH     UNIT         ?PR?_ZEIT?AMPEL3
+            CODE    08EEH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\Ampel (AMPEL3)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?I_EX0?AMPEL3
+  +--> ?PR?_ZEIT?AMPEL3
+  +--> ?PR?NEBENSTRASSE?AMPEL3
+  +--> ?PR?HAUPTSTRASSE?AMPEL3
+
+?PR?NEBENSTRASSE?AMPEL3
+  +--> ?PR?_ZEIT?AMPEL3
+
+?PR?HAUPTSTRASSE?AMPEL3
+  +--> ?PR?_ZEIT?AMPEL3
+
+*** NEW ROOT ***************************************************
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/09/2018  17:38:23  PAGE 2
+
+
+?PR?I_EX1?AMPEL3
+  +--> ?PR?_ZEIT?AMPEL3
+  +--> ?PR?NEBENSTRASSE?AMPEL3
+  +--> ?PR?HAUPTSTRASSE?AMPEL3
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP
+  +--> ?PR?MAIN?AMPEL3
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Ampel (AMPEL3)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        AMPEL3
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0090H.5       PUBLIC        h_Rot
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  B:0090H.0       PUBLIC        n_Rot
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IEN0
+  C:08B4H         PUBLIC        nebenstrasse
+  D:00B8H         PUBLIC        IPL0
+  C:0800H         PUBLIC        i_EX0
+  C:084EH         PUBLIC        i_EX1
+  D:00D8H         PUBLIC        CCON
+  C:08CCH         PUBLIC        main
+  C:089CH         PUBLIC        hauptstrasse
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:08DFH         PUBLIC        _zeit
+  B:0090H.3       PUBLIC        h_Gelb
+  B:0090H.2       PUBLIC        n_Gelb
+  B:0090H.1       PUBLIC        h_Gruen
+  B:00A8H.0       PUBLIC        EX0
+  B:0088H.0       PUBLIC        IT0
+  B:00A8H.2       PUBLIC        EX1
+  B:0088H.2       PUBLIC        IT1
+  B:0090H.4       PUBLIC        n_Gruen
+  B:00B0H.2       PUBLIC        i_ex0
+  D:00F8H         PUBLIC        UEPINT
+  B:00B0H.3       PUBLIC        i_ex1
+  D:00C8H         PUBLIC        T2CON
+  -------         PROC          I_EX0
+  C:0800H         LINE#         25
+  C:081DH         LINE#         27
+  C:0824H         LINE#         28
+  C:0827H         LINE#         29
+  C:082EH         LINE#         30
+  C:0831H         LINE#         32
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/09/2018  17:38:23  PAGE 3
+
+
+  C:0833H         LINE#         34
+  -------         ENDPROC       I_EX0
+  -------         PROC          I_EX1
+  C:084EH         LINE#         36
+  C:086BH         LINE#         38
+  C:0872H         LINE#         39
+  C:0875H         LINE#         40
+  C:087CH         LINE#         41
+  C:087FH         LINE#         44
+  C:0881H         LINE#         45
+  -------         ENDPROC       I_EX1
+  -------         PROC          MAIN
+  C:08CCH         LINE#         47
+  C:08CCH         LINE#         51
+  C:08CEH         LINE#         52
+  C:08D0H         LINE#         55
+  C:08D2H         LINE#         56
+  C:08D4H         LINE#         58
+  C:08D6H         LINE#         61
+  C:08D9H         LINE#         62
+  C:08DBH         LINE#         63
+  C:08DDH         LINE#         65
+  C:08DDH         LINE#         67
+  -------         ENDPROC       MAIN
+  -------         PROC          _ZEIT
+  D:0006H         SYMBOL        timer
+  C:08DFH         LINE#         71
+  C:08DFH         LINE#         73
+  C:08DFH         LINE#         74
+  C:08E3H         LINE#         75
+  C:08EDH         LINE#         77
+  -------         ENDPROC       _ZEIT
+  -------         PROC          HAUPTSTRASSE
+  C:089CH         LINE#         79
+  C:089CH         LINE#         81
+  C:089EH         LINE#         82
+  C:08A0H         LINE#         83
+  C:08A2H         LINE#         85
+  C:08A9H         LINE#         87
+  C:08ABH         LINE#         88
+  C:08ADH         LINE#         89
+  C:08AFH         LINE#         90
+  C:08B1H         LINE#         91
+  C:08B3H         LINE#         93
+  -------         ENDPROC       HAUPTSTRASSE
+  -------         PROC          NEBENSTRASSE
+  C:08B4H         LINE#         95
+  C:08B4H         LINE#         97
+  C:08B6H         LINE#         98
+  C:08B8H         LINE#         99
+  C:08BAH         LINE#         101
+  C:08C1H         LINE#         103
+  C:08C3H         LINE#         104
+  C:08C5H         LINE#         105
+  C:08C7H         LINE#         106
+  C:08C9H         LINE#         107
+  C:08CBH         LINE#         109
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/09/2018  17:38:23  PAGE 4
+
+
+  -------         ENDPROC       NEBENSTRASSE
+  -------         ENDMOD        AMPEL3
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00F4H BYTE (11%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=259
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
