@@ -1,0 +1,104 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/03/2018  08:45:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE Stopuhr.obj TO Stopuhr RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Stopuhr.obj (STOPUHR)
+
+
+LINK MAP OF MODULE:  Stopuhr (STOPUHR)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0062H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Stopuhr (STOPUHR)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        STOPUHR
+  B:0020H.1       SYMBOL        CPLBIT
+  B:00A8H.7       SYMBOL        EA
+  B:00A8H.1       SYMBOL        ET0
+  B:00A8H.0       SYMBOL        EX0
+  B:00A8H.2       SYMBOL        EX1
+  C:0045H         SYMBOL        EXTERN0
+  C:005FH         SYMBOL        EXTERN1
+  C:000DH         SYMBOL        INIT
+  C:0020H         SYMBOL        MAIN
+  D:00B0H         SYMBOL        P3
+  C:005EH         SYMBOL        RETURN
+  D:008CH         SYMBOL        TH0
+  C:0022H         SYMBOL        TIMER0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0000H         LINE#         7
+  C:0003H         LINE#         10
+  C:0013H         LINE#         13
+  C:000BH         LINE#         16
+  C:000DH         LINE#         20
+  C:0010H         LINE#         21
+  C:0013H         LINE#         22
+  C:0016H         LINE#         24
+  C:0018H         LINE#         25
+  C:001AH         LINE#         26
+  C:001CH         LINE#         27
+  C:001EH         LINE#         28
+  C:0020H         LINE#         31
+  C:0022H         LINE#         35
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/03/2018  08:45:54  PAGE 2
+
+
+  C:0025H         LINE#         36
+  C:0028H         LINE#         38
+  C:0029H         LINE#         39
+  C:002AH         LINE#         40
+  C:002DH         LINE#         42
+  C:002FH         LINE#         43
+  C:0030H         LINE#         44
+  C:0031H         LINE#         45
+  C:0034H         LINE#         47
+  C:0036H         LINE#         48
+  C:0037H         LINE#         49
+  C:0038H         LINE#         50
+  C:003BH         LINE#         52
+  C:003DH         LINE#         53
+  C:003EH         LINE#         54
+  C:003FH         LINE#         55
+  C:0042H         LINE#         57
+  C:0044H         LINE#         59
+  C:0045H         LINE#         63
+  C:0047H         LINE#         64
+  C:0049H         LINE#         65
+  C:004BH         LINE#         66
+  C:004EH         LINE#         67
+  C:0050H         LINE#         68
+  C:0053H         LINE#         69
+  C:0056H         LINE#         70
+  C:0058H         LINE#         71
+  C:005AH         LINE#         72
+  C:005CH         LINE#         73
+  C:005EH         LINE#         76
+  C:005FH         LINE#         80
+  C:0061H         LINE#         81
+  -------         ENDMOD        STOPUHR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 005DH BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=98
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
