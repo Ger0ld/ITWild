@@ -22,15 +22,13 @@ Datum:	09.10.2018
 	int reload_time_l = 250;
 
 //Funktionsprototypen
-void gruen(sbit, sbit, sbit);
-void gelb(sbit,sbit, sbit);
-void rot(sbit, sbit, sbit);
-void gelb_rot(sbit, sbit, sbit);
 void interrupt_timer();
 
 void i_EX0 (void) interrupt 0 {
 	
-	TF0 = 1;
+	if(TR0 == 0){
+		TF0 = 1;
+	}
 	//clear interrupt 
 	i_ex0 = 1;
 		
@@ -38,7 +36,9 @@ void i_EX0 (void) interrupt 0 {
 
 void i_EX1 (void) interrupt 2 {
 
-	TF0 = 1;
+	if(TR0 == 0){
+		TF0 = 1;
+	}
 	//clear interrupt 
 	i_ex1 = 1;
 }
@@ -52,7 +52,7 @@ void i_t1 (void) interrupt 1{
 void interrupt_timer(){
 
 	//Reload Timer
-	if (ampel_status == 1){
+	if (ampel_status == 1 || ampel_status == 3){
 		TL0 = reload_time_l + ((256 - reload_time_l) / 2) ;
 		TH0 = reload_time_h + ((256 - reload_time_h) / 2) ;
 	}else{
@@ -63,28 +63,43 @@ void interrupt_timer(){
 	switch(ampel_status){
 		case 0: 
 		
-			gruen(h_rot, h_gelb, h_gruen);
-			rot(n_rot, n_gelb, n_gruen);
+			h_rot = 0;
+			h_gelb = 0;
+			h_gruen = 1;
+		
+			n_gelb = 0;
+			n_rot = 1;
 			
 			TR0 =~ TR0;
 
 			break;
 		case 1:
 			
-			gelb(h_rot, h_gelb, h_gruen);
-			gelb_rot(n_rot, n_gelb, n_gruen);
+			h_gruen = 0;
+			h_gelb = 1;
+		
+			n_gelb = 1;
+			
 			break;
 		
 		case 2:
 			
-			rot(h_rot, h_gelb, h_gruen);
-			gruen(n_rot, n_gelb, n_gruen);
+			h_gelb = 0;
+			h_rot = 1;
+		
+			n_gelb = 0;
+			n_rot = 0;
+			n_gruen = 1;
+		
 			break;
 		
 		case 3:
 			
-			gelb_rot(h_rot, h_gelb, h_gruen);
-			gelb(n_rot, n_gelb, n_gruen);
+			h_gelb = 1;
+				
+			n_gruen = 0;
+			n_gelb = 1;
+		
 			break;
 	}
 	
@@ -124,36 +139,6 @@ void main(){
 	h_gruen = 1;
 	n_rot = 1;
 	
-	while(1){
-		
-	}
-	
-}
-
-void gruen(sbit rot, sbit gelb, sbit gruen){
-
-	rot = 0;
-	gelb = 0;
-	gruen = 1;
-	
-}
-
-void gelb(sbit rot, sbit gelb, sbit gruen){
-	
-	gruen = 0;
-	gelb = 1;
-	
-}
-
-void rot(sbit rot, sbit gelb, sbit gruen){
-
-	gelb = 0;
-	rot = 1;
-	
-}
-
-void gelb_rot(sbit rot, sbit gelb, sbit gruen){
-	
-	gelb = 1;
+	while(1){}
 	
 }

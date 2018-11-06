@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/05/2018  18:21:51  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/06/2018  17:43:18  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -26,10 +26,7 @@ LINK MAP OF MODULE:  .\Objects\Ampel_3 (AMPEL3)
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
             DATA    0008H     0006H     UNIT         ?DT?AMPEL3
-                    000EH     0012H                  *** GAP ***
-            BIT     0020H.0   0000H.3   UNIT         _BIT_GROUP_
-                    0020H.3   0000H.5                *** GAP ***
-            IDATA   0021H     0001H     UNIT         ?STACK
+            IDATA   000EH     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
@@ -39,50 +36,32 @@ LINK MAP OF MODULE:  .\Objects\Ampel_3 (AMPEL3)
                     000EH     0005H                  *** GAP ***
             CODE    0013H     0003H     ABSOLUTE     
                     0016H     07EAH                  *** GAP ***
-            CODE    0800H     00EAH     UNIT         ?PR?INTERRUPT_TIMER?AMPEL3
-            CODE    08EAH     008CH     UNIT         ?C_C51STARTUP
-            CODE    0976H     008BH     UNIT         ?C?LIB_CODE
-            CODE    0A01H     003BH     UNIT         ?PR?I_T1?AMPEL3
-            CODE    0A3CH     0020H     UNIT         ?PR?MAIN?AMPEL3
-            CODE    0A5CH     0009H     UNIT         ?C_INITSEG
-            CODE    0A65H     0007H     UNIT         ?PR?GRUEN?AMPEL3
-            CODE    0A6CH     0005H     UNIT         ?PR?I_EX0?AMPEL3
-            CODE    0A71H     0005H     UNIT         ?PR?I_EX1?AMPEL3
-            CODE    0A76H     0005H     UNIT         ?PR?GELB?AMPEL3
-            CODE    0A7BH     0005H     UNIT         ?PR?ROT?AMPEL3
-            CODE    0A80H     0003H     UNIT         ?PR?GELB_ROT?AMPEL3
+            CODE    0800H     0095H     UNIT         ?PR?INTERRUPT_TIMER?AMPEL3
+            CODE    0895H     008CH     UNIT         ?C_C51STARTUP
+            CODE    0921H     008BH     UNIT         ?C?LIB_CODE
+            CODE    09ACH     003BH     UNIT         ?PR?I_T1?AMPEL3
+            CODE    09E7H     0020H     UNIT         ?PR?MAIN?AMPEL3
+            CODE    0A07H     0009H     UNIT         ?C_INITSEG
+            CODE    0A10H     0008H     UNIT         ?PR?I_EX0?AMPEL3
+            CODE    0A18H     0008H     UNIT         ?PR?I_EX1?AMPEL3
 
 
 
 OVERLAY MAP OF MODULE:   .\Objects\Ampel_3 (AMPEL3)
 
 
-SEGMENT                               BIT_GROUP 
-  +--> CALLED SEGMENT              START    LENGTH
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/05/2018  18:21:51  PAGE 2
-
-
---------------------------------------------------
-?PR?I_T1?AMPEL3                    -----    -----
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?I_T1?AMPEL3
   +--> ?PR?INTERRUPT_TIMER?AMPEL3
-
-?PR?INTERRUPT_TIMER?AMPEL3         -----    -----
-  +--> ?PR?GRUEN?AMPEL3
-  +--> ?PR?ROT?AMPEL3
-  +--> ?PR?GELB?AMPEL3
-  +--> ?PR?GELB_ROT?AMPEL3
-
-?PR?GRUEN?AMPEL3                   0020H.0  0000H.3
-
-?PR?ROT?AMPEL3                     0020H.0  0000H.3
-
-?PR?GELB?AMPEL3                    0020H.0  0000H.3
-
-?PR?GELB_ROT?AMPEL3                0020H.0  0000H.3
 
 *** NEW ROOT ***************************************************
 
-?C_C51STARTUP                      -----    -----
+?C_C51STARTUP
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/06/2018  17:43:18  PAGE 2
+
+
   +--> ?PR?MAIN?AMPEL3
   +--> ?C_INITSEG
 
@@ -103,15 +82,13 @@ SYMBOL TABLE OF MODULE:  .\Objects\Ampel_3 (AMPEL3)
   B:00A8H.7       PUBLIC        EA
   D:00A8H         PUBLIC        IEN0
   D:00B8H         PUBLIC        IPL0
-  C:0A6CH         PUBLIC        i_EX0
-  C:0A71H         PUBLIC        i_EX1
+  C:0A10H         PUBLIC        i_EX0
+  C:0A18H         PUBLIC        i_EX1
   D:0008H         PUBLIC        ampel_status
-  C:0A76H         PUBLIC        gelb
   B:0090H.5       PUBLIC        h_rot
-  C:0A65H         PUBLIC        gruen
   D:00D8H         PUBLIC        CCON
   B:0090H.0       PUBLIC        n_rot
-  C:0A3CH         PUBLIC        main
+  C:09E7H         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0089H         PUBLIC        TMOD
   D:0088H         PUBLIC        TCON
@@ -119,16 +96,11 @@ SYMBOL TABLE OF MODULE:  .\Objects\Ampel_3 (AMPEL3)
   B:0088H.5       PUBLIC        TF0
   D:008CH         PUBLIC        TH0
   B:00A8H.0       PUBLIC        EX0
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/05/2018  18:21:51  PAGE 3
-
-
   B:0088H.0       PUBLIC        IT0
   B:00A8H.2       PUBLIC        EX1
   B:0088H.2       PUBLIC        IT1
   D:008AH         PUBLIC        TL0
-  C:0A80H         PUBLIC        gelb_rot
   D:000AH         PUBLIC        reload_time_h
-  C:0A7BH         PUBLIC        rot
   B:0088H.4       PUBLIC        TR0
   B:00B0H.2       PUBLIC        i_ex0
   D:00F8H         PUBLIC        UEPINT
@@ -138,135 +110,110 @@ SYMBOL TABLE OF MODULE:  .\Objects\Ampel_3 (AMPEL3)
   D:00C8H         PUBLIC        T2CON
   B:0090H.2       PUBLIC        n_gelb
   B:0090H.1       PUBLIC        h_gruen
-  C:0A01H         PUBLIC        i_t1
+  C:09ACH         PUBLIC        i_t1
   B:0090H.4       PUBLIC        n_gruen
   C:0800H         PUBLIC        interrupt_timer
   -------         PROC          I_EX0
-  C:0A6CH         LINE#         31
-  C:0A6CH         LINE#         33
-  C:0A6EH         LINE#         35
-  C:0A70H         LINE#         37
+  C:0A10H         LINE#         27
+  C:0A10H         LINE#         29
+  C:0A13H         LINE#         30
+  C:0A15H         LINE#         31
+  C:0A15H         LINE#         33
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/06/2018  17:43:18  PAGE 3
+
+
+  C:0A17H         LINE#         35
   -------         ENDPROC       I_EX0
   -------         PROC          I_EX1
-  C:0A71H         LINE#         39
-  C:0A71H         LINE#         41
-  C:0A73H         LINE#         43
-  C:0A75H         LINE#         44
+  C:0A18H         LINE#         37
+  C:0A18H         LINE#         39
+  C:0A1BH         LINE#         40
+  C:0A1DH         LINE#         41
+  C:0A1DH         LINE#         43
+  C:0A1FH         LINE#         44
   -------         ENDPROC       I_EX1
   -------         PROC          I_T1
-  C:0A01H         LINE#         46
-  C:0A1EH         LINE#         48
-  C:0A21H         LINE#         50
+  C:09ACH         LINE#         46
+  C:09C9H         LINE#         48
+  C:09CCH         LINE#         50
   -------         ENDPROC       I_T1
   -------         PROC          INTERRUPT_TIMER
   C:0800H         LINE#         52
   C:0800H         LINE#         55
-  C:0808H         LINE#         56
-  C:081DH         LINE#         57
-  C:0833H         LINE#         58
-  C:0835H         LINE#         59
-  C:0838H         LINE#         60
-  C:083BH         LINE#         61
-  C:083BH         LINE#         63
-  C:0854H         LINE#         64
-  C:0854H         LINE#         66
-  C:0863H         LINE#         67
-  C:0872H         LINE#         69
-  C:0874H         LINE#         71
-  C:0876H         LINE#         72
-  C:0876H         LINE#         74
-  C:0885H         LINE#         75
-  C:0894H         LINE#         76
-  C:0896H         LINE#         78
-  C:0896H         LINE#         80
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/05/2018  18:21:51  PAGE 4
+  C:0810H         LINE#         56
+  C:0826H         LINE#         57
+  C:083CH         LINE#         58
+  C:083EH         LINE#         59
+  C:0841H         LINE#         60
+  C:0844H         LINE#         61
+  C:0844H         LINE#         63
+  C:0857H         LINE#         64
+  C:0857H         LINE#         66
+  C:0859H         LINE#         67
+  C:085BH         LINE#         68
+  C:085DH         LINE#         70
+  C:085FH         LINE#         71
+  C:0861H         LINE#         73
+  C:0863H         LINE#         75
+  C:0865H         LINE#         76
+  C:0865H         LINE#         78
+  C:0867H         LINE#         79
+  C:0869H         LINE#         81
+  C:086BH         LINE#         83
+  C:086DH         LINE#         85
+  C:086DH         LINE#         87
+  C:086FH         LINE#         88
+  C:0871H         LINE#         90
+  C:0873H         LINE#         91
+  C:0875H         LINE#         92
+  C:0877H         LINE#         94
+  C:0879H         LINE#         96
+  C:0879H         LINE#         98
+  C:087BH         LINE#         100
+  C:087DH         LINE#         101
+  C:087FH         LINE#         103
+  C:087FH         LINE#         104
+  C:087FH         LINE#         106
+  C:0882H         LINE#         107
+  C:088AH         LINE#         108
+  C:0890H         LINE#         109
+  C:0894H         LINE#         110
+  C:0894H         LINE#         111
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/06/2018  17:43:18  PAGE 4
 
 
-  C:08A5H         LINE#         81
-  C:08B4H         LINE#         82
-  C:08B6H         LINE#         84
-  C:08B6H         LINE#         86
-  C:08C5H         LINE#         87
-  C:08D4H         LINE#         88
-  C:08D4H         LINE#         89
-  C:08D4H         LINE#         91
-  C:08D7H         LINE#         92
-  C:08DFH         LINE#         93
-  C:08E5H         LINE#         94
-  C:08E9H         LINE#         95
-  C:08E9H         LINE#         96
-  C:08E9H         LINE#         98
+  C:0894H         LINE#         113
   -------         ENDPROC       INTERRUPT_TIMER
   -------         PROC          MAIN
-  C:0A3CH         LINE#         100
-  C:0A3CH         LINE#         104
-  C:0A3EH         LINE#         105
-  C:0A40H         LINE#         108
-  C:0A42H         LINE#         109
-  C:0A44H         LINE#         112
-  C:0A46H         LINE#         114
-  C:0A48H         LINE#         116
-  C:0A4BH         LINE#         117
-  C:0A4DH         LINE#         119
-  C:0A50H         LINE#         120
-  C:0A53H         LINE#         123
-  C:0A56H         LINE#         124
-  C:0A58H         LINE#         125
-  C:0A5AH         LINE#         127
-  C:0A5AH         LINE#         129
+  C:09E7H         LINE#         115
+  C:09E7H         LINE#         119
+  C:09E9H         LINE#         120
+  C:09EBH         LINE#         123
+  C:09EDH         LINE#         124
+  C:09EFH         LINE#         127
+  C:09F1H         LINE#         129
+  C:09F3H         LINE#         131
+  C:09F6H         LINE#         132
+  C:09F8H         LINE#         134
+  C:09FBH         LINE#         135
+  C:09FEH         LINE#         138
+  C:0A01H         LINE#         139
+  C:0A03H         LINE#         140
+  C:0A05H         LINE#         142
   -------         ENDPROC       MAIN
-  -------         PROC          GRUEN
-  B:0020H.0       SYMBOL        rot
-  B:0020H.1       SYMBOL        gelb
-  B:0020H.2       SYMBOL        gruen
-  C:0A65H         LINE#         133
-  C:0A65H         LINE#         135
-  C:0A67H         LINE#         136
-  C:0A69H         LINE#         137
-  C:0A6BH         LINE#         139
-  -------         ENDPROC       GRUEN
-  -------         PROC          GELB
-  B:0020H.0       SYMBOL        rot
-  B:0020H.1       SYMBOL        gelb
-  B:0020H.2       SYMBOL        gruen
-  C:0A76H         LINE#         141
-  C:0A76H         LINE#         143
-  C:0A78H         LINE#         144
-  C:0A7AH         LINE#         146
-  -------         ENDPROC       GELB
-  -------         PROC          ROT
-  B:0020H.0       SYMBOL        rot
-  B:0020H.1       SYMBOL        gelb
-  B:0020H.2       SYMBOL        gruen
-  C:0A7BH         LINE#         148
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/05/2018  18:21:51  PAGE 5
-
-
-  C:0A7BH         LINE#         150
-  C:0A7DH         LINE#         151
-  C:0A7FH         LINE#         153
-  -------         ENDPROC       ROT
-  -------         PROC          GELB_ROT
-  B:0020H.0       SYMBOL        rot
-  B:0020H.1       SYMBOL        gelb
-  B:0020H.2       SYMBOL        gruen
-  C:0A80H         LINE#         155
-  C:0A80H         LINE#         157
-  C:0A82H         LINE#         159
-  -------         ENDPROC       GELB_ROT
   -------         ENDMOD        AMPEL3
 
   -------         MODULE        ?C?SIDIV
-  C:0976H         PUBLIC        ?C?SIDIV
+  C:0921H         PUBLIC        ?C?SIDIV
   -------         ENDMOD        ?C?SIDIV
 
   -------         MODULE        ?C?UIDIV
-  C:09ACH         PUBLIC        ?C?UIDIV
+  C:0957H         PUBLIC        ?C?UIDIV
   -------         ENDMOD        ?C?UIDIV
 
 ******************************************************************************
-* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0174H BYTE (18%) *
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0111H BYTE (13%) *
 ******************************************************************************
 
-Program Size: data=15.3 xdata=0 code=655
+Program Size: data=15.0 xdata=0 code=556
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
