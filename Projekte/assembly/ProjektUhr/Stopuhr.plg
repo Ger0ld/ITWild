@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+H:\ITWild-master\Projekte\ProjektUhr\Stopuhr.uvproj
+Project File Date:  05/03/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(4): error A7: LABEL NOT PERMITTED
+Stopuhr.a51(10): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(42): error A38: NUMBER OF OPERANDS DOES NOT MATCH INSTRUCTION
+Stopuhr.a51(54): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(4): error A7: LABEL NOT PERMITTED
+Stopuhr.a51(10): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(45): error A38: NUMBER OF OPERANDS DOES NOT MATCH INSTRUCTION
+Stopuhr.a51(57): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(4): error A7: LABEL NOT PERMITTED
+Stopuhr.a51(45): error A38: NUMBER OF OPERANDS DOES NOT MATCH INSTRUCTION
+Stopuhr.a51(57): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(4): error A7: LABEL NOT PERMITTED
+Stopuhr.a51(57): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(57): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=63
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(57): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=63
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(58): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=65
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(45): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(46): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(58): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(46): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(59): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(46): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(59): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(46): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(59): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(46): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(59): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(59): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=65
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=68
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=68
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(22): error A48: DATA-ADDRESS EXPECTED
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(22): error A48: DATA-ADDRESS EXPECTED
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(22): error A48: DATA-ADDRESS EXPECTED
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(22): error A48: DATA-ADDRESS EXPECTED
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(22): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(48): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(22): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(48): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(3): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Stopuhr.a51(22): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(47): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(48): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(60): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=67
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(71): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=83
+creating hex file from "Stopuhr"...
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(70): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=82
+creating hex file from "Stopuhr"...
+"Stopuhr" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(70): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(71): error A45: UNDEFINED SYMBOL (PASS-2)
+Stopuhr.a51(78): warning A41: MISSING 'END' STATEMENT
+Target not created
+Build target 'Target 1'
+assembling Stopuhr.a51...
+Stopuhr.a51(81): warning A41: MISSING 'END' STATEMENT
+linking...
+Program Size: data=8.0 xdata=0 code=98
+creating hex file from "Stopuhr"...
+"Stopuhr" - 0 Error(s), 1 Warning(s).

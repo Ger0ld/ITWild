@@ -1,0 +1,107 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/22/2018  08:41:35  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE parkhaus.obj TO parkhaus RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  parkhaus.obj (PARKHAUS)
+
+
+LINK MAP OF MODULE:  parkhaus (PARKHAUS)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     005BH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  parkhaus (PARKHAUS)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PARKHAUS
+  B:0090H.7       SYMBOL        AMPEL
+  C:004EH         SYMBOL        AMPELAN
+  C:0051H         SYMBOL        ANZEIGE
+  C:0047H         SYMBOL        AUSGABE
+  C:0000H         SYMBOL        DEKLARATION
+  B:00A8H.7       SYMBOL        EA
+  B:00A8H.0       SYMBOL        EX0
+  B:00A8H.2       SYMBOL        EX1
+  C:0027H         SYMBOL        IN
+  C:0015H         SYMBOL        INIT
+  B:0088H.0       SYMBOL        IT0
+  B:0088H.2       SYMBOL        IT1
+  C:0038H         SYMBOL        OUT
+  D:0090H         SYMBOL        P1
+  D:00B0H         SYMBOL        P3
+  D:0090H         SYMBOL        PORT
+  B:0090H.6       SYMBOL        SCHRANKERAUS
+  B:0090H.5       SYMBOL        SCHRANKEREIN
+  C:0025H         SYMBOL        START
+  C:002EH         SYMBOL        WEITERIN
+  C:003FH         SYMBOL        WEITEROUT
+  C:0058H         SYMBOL        ZEITVER
+  C:0000H         LINE#         10
+  C:0003H         LINE#         13
+  C:0013H         LINE#         16
+  C:0015H         LINE#         20
+  C:0017H         LINE#         21
+  C:0019H         LINE#         22
+  C:001BH         LINE#         23
+  C:001DH         LINE#         24
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/22/2018  08:41:35  PAGE 2
+
+
+  C:001FH         LINE#         25
+  C:0021H         LINE#         26
+  C:0023H         LINE#         27
+  C:0025H         LINE#         31
+  C:0027H         LINE#         34
+  C:0029H         LINE#         35
+  C:002AH         LINE#         36
+  C:002DH         LINE#         37
+  C:002EH         LINE#         39
+  C:0030H         LINE#         40
+  C:0031H         LINE#         41
+  C:0033H         LINE#         42
+  C:0035H         LINE#         43
+  C:0037H         LINE#         44
+  C:0038H         LINE#         47
+  C:003AH         LINE#         48
+  C:003BH         LINE#         49
+  C:003EH         LINE#         50
+  C:003FH         LINE#         52
+  C:0041H         LINE#         53
+  C:0042H         LINE#         54
+  C:0044H         LINE#         55
+  C:0046H         LINE#         56
+  C:0047H         LINE#         59
+  C:0048H         LINE#         60
+  C:004BH         LINE#         61
+  C:004DH         LINE#         62
+  C:004EH         LINE#         64
+  C:0050H         LINE#         65
+  C:0051H         LINE#         68
+  C:0053H         LINE#         69
+  C:0055H         LINE#         70
+  C:0056H         LINE#         71
+  C:0058H         LINE#         73
+  C:005AH         LINE#         74
+  -------         ENDMOD        PARKHAUS
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 004DH BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=91
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
